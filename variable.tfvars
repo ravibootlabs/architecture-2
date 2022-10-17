@@ -1,0 +1,53 @@
+ami              = "ami-01216e7612243e0ef"
+instance_type    = "t2.micro"
+cidr_block       = "10.0.0.0/16"
+device_index     = 0
+volume_size      = 8
+volume_type      = "gp2"
+instance_tenancy = "default"
+key_name         = "test"
+subnet1_cidr_block ="10.0.1.0/24"
+subnet_group_name  ="group"
+
+subnet_cidr_block = "10.0.2.0/24"
+# availability_zone = "ap-south-1a"
+# region            = "ap-northeast-3"
+device_name            = "/dev/xvdf"
+availability_zone_name = "ap-south-1a"
+encrypted              = "true"
+#   kms_key_id                      = var.kms_key_id
+performance_mode                = "generalPurpose"
+provisioned_throughput_in_mibps = "1"
+throughput_mode                 = "provisioned"
+# transition_to_primary_storage_class = "value"
+# region                              = "ap-south-1"
+creation_token = "myfile"
+# transition_to_ia                    = "value"
+algorithm                   ="RSA"
+rsa_bits                    = 4690
+region                       = "ap-south-1"
+cluster_id                   = "clustertest"
+efs_engine                   = "memcached"
+efs_engine_version           = "1.6.12"
+port                         = 11211
+parameter_group_name         = "default.memcached1.6"
+node_type                    = "cache.r6g.large"
+num_cache_nodes              = 1
+subnet_group_cache_name      ="name"
+availability1_zone           = "ap-south-1b"
+preferred_availability_zones = ["ap-south-1a"]
+apply_immediately            = "true"
+availability_zone            = "ap-south-1a"
+db_name                      = "mydb"
+rds_engine                   = "mysql"
+rds_engine_version           = "8.0.28"
+username                     = "foo"
+password                     = "foobarbaz"
+instance_class               = "db.r6g.2xlarge"
+storage_type                 = "io1"
+allocated_storage            = "100"
+iops                         = "3000"
+max_allocated_storage        = "1000"
+
+
+    
